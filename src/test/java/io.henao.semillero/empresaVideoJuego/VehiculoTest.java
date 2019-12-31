@@ -13,11 +13,11 @@ public class VehiculoTest {
 
     @Before
     public void setup(){
-        vehiculoBombarderoB56 = new Vehiculo(100, 2, 4, 500, false);
-        vehiculoCamionSumHi = new Vehiculo(1000, 1, 2, 4500, false);
+        vehiculoBombarderoB56 = new Vehiculo(100, 2, 4, 500, false, null);
+        vehiculoCamionSumHi = new Vehiculo(1000, 1, 2, 4500, false, null);
 
-        vehiculoPortaAviones = new Vehiculo(100000000, 4, 3200, 97000000, false);
-        vehiculoTanqueM4 = new Vehiculo(500, 2, 3, 7000, false);
+        vehiculoPortaAviones = new Vehiculo(100000000, 4, 3200, 97000000, false, null);
+        vehiculoTanqueM4 = new Vehiculo(500, 2, 3, 7000, false, null);
     }
 
     @Test

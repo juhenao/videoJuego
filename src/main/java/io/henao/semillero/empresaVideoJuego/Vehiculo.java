@@ -1,13 +1,17 @@
 package io.henao.semillero.empresaVideoJuego;
 
+import java.util.ArrayList;
+
 public class Vehiculo {
     private int numeroMunicion;
     private int cantidadArmamento;
     private int capacidadPersona;
     private double capacidadTransporteKg;
     private boolean noMunicion;
+    private TipoArmamento tipoArmamento;
 
-    public Vehiculo(int numeroMunicion, int cantidadArmamento, int capacidadPersona, double capacidadTransporteKg, boolean noMunicion){
+    public Vehiculo(int numeroMunicion, int cantidadArmamento, int capacidadPersona, double capacidadTransporteKg, boolean noMunicion, String nombreArmamento){
+        tipoArmamento = new TipoArmamento(nombreArmamento);
         this.numeroMunicion = numeroMunicion;
         this.cantidadArmamento = cantidadArmamento;
         this.capacidadPersona = capacidadPersona;
