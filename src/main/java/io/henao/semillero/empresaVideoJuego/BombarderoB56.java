@@ -15,10 +15,20 @@ public class BombarderoB56 extends Vehiculo implements LanzarAtaque{
                     noMunicion = true;
                 }
             } else {
-                noMunicion = true;
                 lanzandoAtaque = "CAPITAN, SIN MUNICIÓN!!!";
-
             }
+        } else if(nombreArmamento == "Bomba"){
+            if(!noMunicion){
+                lanzandoAtaque = "APUNTEN...!! FUEGOOOOO!! ........ BOOM";
+                numeroMunicion -= 1;
+                if(numeroMunicion <= 0){
+                    noMunicion = true;
+                }
+            }else{
+                lanzandoAtaque = "SIN BOMBASSS, VAMONOS WEYYYYYYYYYYY!!!";
+            }
+        } else {
+            lanzandoAtaque = "Este vehiculo no tiene equipadad el arma: " + nombreArmamento;
         }
 
         return lanzandoAtaque;
