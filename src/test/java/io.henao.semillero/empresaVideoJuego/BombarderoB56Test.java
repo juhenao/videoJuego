@@ -10,8 +10,6 @@ public class BombarderoB56Test {
     private BombarderoB56 bombarderoB56;
     private BombarderoB56 bombarderoB56A;
 
-    private ArrayList<BombarderoB56> bombarderoB56ArrayList;
-
     @Before
     public void setup(){
         bombarderoB56 = new BombarderoB56(5, 3, 4, 5000, false, "Ametralladora");

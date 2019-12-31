@@ -29,6 +29,26 @@ public class PortaAvBismarck extends Vehiculo implements LanzarAtaque{
             }else{
                 lanzandoAtaque = "SIN BOMBASSS, VAMONOS WEYYYYYYYYYYY!!!";
             }
+        } else if(nombreArmamento == "Vengala"){
+            if(!noMunicion){
+                lanzandoAtaque = "Tuf tuf tuf tuf...";
+                numeroMunicion -= 25;
+                if(numeroMunicion <= 0){
+                    noMunicion = true;
+                }
+            } else {
+                lanzandoAtaque = "Viene un misíl, afuera todos!!!!";
+            }
+        } else if(nombreArmamento == "Misil autodirigido"){
+            if(!noMunicion){
+                lanzandoAtaque = "3...2...1... ~~ Pifsssssssss fhusssssssssssssssss BOOOOOOOOOOOOOOOOOOOOOOOOOOM";
+                numeroMunicion -= 1;
+                if(numeroMunicion <= 0){
+                    noMunicion = true;
+                }
+            } else {
+                lanzandoAtaque = "O.O ~ NO HAY MISILES??";
+            }
         } else {
             lanzandoAtaque = "Este vehiculo no tiene equipadad el arma: " + nombreArmamento;
         }
